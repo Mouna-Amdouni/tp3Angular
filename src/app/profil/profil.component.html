@@ -1,0 +1,12 @@
+<p>profil works!</p>
+<ul>
+    <li *ngFor="let i of profils">
+        {{i}}
+    </li>
+</ul>
+
+<select [(ngModel)]="profil" ><option *ngFor="let i of profils" value="{{i}}">{{i}}
+    </option>
+    </select>
+    <p>vous avez le choix de {{profil}}</p>
+            <p *ngIf ="profil== 'Admin'">vous avez le choix de {{profil}}</p>
